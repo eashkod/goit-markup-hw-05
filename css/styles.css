@@ -40,7 +40,7 @@ body {
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 2px solid red;
+  /*outline: 2px solid red;*/
 }
 
 .section {
@@ -97,18 +97,16 @@ body {
 
 
 .header-container {
-
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
   align-items: center;
 }
 .navigation {
   margin-right: auto;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header-nav {
-
   list-style: none;
   display: flex;
   gap: 50px;
@@ -116,11 +114,14 @@ body {
 }
 
 .header-nav-link {
+  position: relative;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
+  padding-top: 32px;
   color: var(--title-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover,
@@ -129,7 +130,7 @@ body {
   color: var(--hover-color);
 }
 
-/*.header-nav-link.current::after {
+.header-nav-link.current::after {
   position: absolute;
   content: "";
   display: block;
@@ -137,15 +138,14 @@ body {
   height: 4px;
   background: var(--hover-color);
   border-radius: 2px;
-  left: 0;
-  bottom: 0;*/
+  bottom: 0;
 }
 
 .contact {
-  list-style: none;
   display: flex;
+  list-style: none;
   gap: 50px;
-  /*align-items: center;*/
+  align-items: center;
 }
 
 .contact-link {
@@ -155,12 +155,13 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link-icon {
   fill: #757575;
   margin-right: 10px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -350,11 +351,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-soc-icon {
   fill: #afb1b8;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-soc-link:hover,
@@ -399,11 +401,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customers-icon {
   fill: #afb1b8;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customers-link:hover {
@@ -439,7 +442,7 @@ body {
   padding: 6px 22px;
   color: #212121;
   background-color: #f5f4fa;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn:hover,
@@ -460,7 +463,7 @@ body {
 
 .portfolio-project-list {
   width: calc((100% - 60px) / 3);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-project-list:hover .portfolio-project-top-text {
@@ -489,7 +492,7 @@ body {
   padding: 63px 24px;
   height: 100%;
   transform: translateY(100%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 }
 
@@ -597,11 +600,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-icon {
   fill: #afb1b8;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
